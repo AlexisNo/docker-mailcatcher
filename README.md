@@ -7,10 +7,12 @@ A Docker [mailcatcher](http://mailcatcher.me/) image to use for development envi
 
 Link this service to another one that use it as an SMTP server.
 
-Example of 
+Example with docker-compose:
 
     webapp:
-      /* Define the "webapp" service here */
+      /*
+       * Define the "webapp" service here
+       */
       links:
        - mailcatcher
     mailcatcher:
